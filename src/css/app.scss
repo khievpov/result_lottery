@@ -1,1 +1,11 @@
 // app global css in SCSS form
+body {
+  font-family: KhmerOS_battambang, 'Open Sans', sans-serif;
+  color: #444;
+  background-color: #e9ecef;
+}
+//header
+.header-scrolled {
+  background: rgba(40, 58, 90, 1);
+  margin-top: -4px;
+}
