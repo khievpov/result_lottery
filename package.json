@@ -1,37 +1,38 @@
 {
   "name": "result-lottery",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "system_lottery",
-  "productName": "Quasar App",
-  "author": "Pov <khievpov09@gmail.com>",
-  "type": "module",
+  "productName": "មើលឆ្នោតប្រចាំថ្ងៃ",
+  "author": "Admin <dev.khievpov09@gmail.com>",
   "private": true,
   "scripts": {
-    "lint": "eslint -c ./eslint.config.js \"./src*/**/*.{js,cjs,mjs,vue}\"",
+    "lint": "eslint --ext .js,.vue ./",
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0",
-    "dev": "quasar dev",
-    "build": "quasar build",
-    "postinstall": "quasar prepare"
+    "dev": "quasar dev"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
+    "axios": "^1.6.7",
+    "pinia": "^3.0.4",
     "quasar": "^2.16.0",
     "vue": "^3.5.22",
+    "vue-i18n": "^9.0.0",
     "vue-router": "^4.0.0"
   },
   "devDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^3.3.1",
     "@eslint/js": "^9.14.0",
+    "@quasar/app-vite": "^2.1.0",
+    "@vue/eslint-config-prettier": "^10.1.0",
+    "autoprefixer": "^10.4.2",
     "eslint": "^9.14.0",
     "eslint-plugin-vue": "^10.4.0",
     "globals": "^16.4.0",
-    "vite-plugin-checker": "^0.11.0",
-    "vue-eslint-parser": "^10.2.0",
-    "@vue/eslint-config-prettier": "^10.1.0",
+    "postcss": "^8.4.14",
     "prettier": "^3.3.3",
-    "@quasar/app-vite": "^2.1.0",
-    "autoprefixer": "^10.4.2",
-    "postcss": "^8.4.14"
+    "vite-plugin-checker": "^0.11.0",
+    "vue-eslint-parser": "^10.2.0"
   },
   "engines": {
     "node": "^28 || ^26 || ^24 || ^22 || ^20",
